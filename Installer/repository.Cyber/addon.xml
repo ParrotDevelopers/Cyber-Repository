@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository.Cyber" name="Cyber Repository" version="1.0.0" provider-name="Parrot Developers">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Cyber Repository">
+            <info compressed="false">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/addons.xml</info>
+            <checksum>https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/addons.xml.md5</checksum>
+            <datadir zip="true">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/</datadir>
+            <hashes>false</hashes>
+
+            <dir>
+			<info compressed="false">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/addons.xml</info>
+			<checksum>https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/addons.xml.md5</checksum>
+			<datadir zip="true">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/</datadir>
+		</dir>
+           
+		
+
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>House Of Parrot TV</summary>
+            <description>Welcome to Cyber Repository</description>
+            <platform>all</platform>
+    </extension>
+    <assets>
+              <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</addon>
