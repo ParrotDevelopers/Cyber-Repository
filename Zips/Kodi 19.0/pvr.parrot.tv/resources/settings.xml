@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <settings version="1">
-  <section id="pvr.iptvsimple">
+  <section id="pvr.parrot.tv">
 
     <!-- M3U -->
     <category id="general" label="30010" help="30600">
       <group id="1" label="30010">
-        <setting id="m3uPathType" type="" label="30000" help="30601">
-          <level>0</level>
-          <default>1</default>
-          <constraints>
-            <options>
-           
-              <option label="30002">1</option> <!-- REMOTE_PATH -->
-            </options>
-          </constraints>
-          <control type="spinner" format="integer" />
-        </setting>
-        <setting id="m3uPath" type="path" parent="m3uPathType" label="30011" help="30602">
-          <level>0</level>
-          <default></default>
-          <constraints>
-            <allowempty>true</allowempty>
-            <writable>false</writable>
-          </constraints>
-          <dependencies>
-            <dependency type="visible" setting="m3uPathType" operator="is">0</dependency>
-          </dependencies>
-          <control type="button" format="file">
-            <heading>1033</heading>
-          </control>
-        </setting>
-        <setting id="m3uUrl" type="string" parent="m3uPathType" label="30012" help="30603">
+
+        <setting visible="0" id="m3uUrl" type="" parent="m3uPathType" label="30012" help="30603">
           <level>0</level>
           <default>https://l.parrottv.tk/Matrix-Main</default>
           <constraints>
-            <allowempty>true</allowempty>
+            <allowempty>false</allowempty>
           </constraints>
           <dependencies>
-            <dependency type="" setting="m3uPathType" operator="is">1</dependency>
+            <dependency type="" visible="0" setting="m3uPathType" operator="is">1</dependency>
           </dependencies>
-          <control type="" format="string" />
+          <control type="edit" format="string" />
         </setting>
         <setting id="m3uCache" type="boolean" parent="m3uPathType" label="30025" help="30604">
           <level>0</level>
-          <default>1</default>
+          <default>true</default>
           <dependencies>
-            <dependency type="" setting="m3uPathType" operator="is">1</dependency>
+            <dependency type="visible" setting="m3uPathType" operator="is">1</dependency>
           </dependencies>
           <control type="toggle" />
         </setting>
@@ -57,7 +33,6 @@
           <default>1</default>
           <constraints>
             <options>
-        
               <option label="30004">1</option> <!-- REPEATED_REFRESH -->
               <option label="30005">2</option> <!-- ONCE_PER_DAY -->
             </options>
@@ -66,7 +41,7 @@
         </setting>
         <setting id="m3uRefreshIntervalMins" type="integer" parent="m3uRefreshMode" label="30016" help="30608">
           <level>1</level>
-          <default>120</default>
+          <default>60</default>
           <constraints>
             <minimum>5</minimum>
             <step>10</step>
@@ -97,16 +72,38 @@
         </setting>
       </group>
 
-      
 
-     
     </category>
 
     <!-- EPG -->
     <category id="epgsettings" label="30020" help="30620">
       <group id="1" label="30019">
-      
 
+        <setting id="epgPath" type="path" parent="epgPathType" label="30021" help="30622">
+          <level>0</level>
+          <default></default>
+          <constraints>
+            <allowempty>true</allowempty>
+            <writable>false</writable>
+          </constraints>
+          <dependencies>
+            <dependency type="visible" setting="epgPathType" operator="is">0</dependency>
+          </dependencies>
+          <control type="button" format="file">
+            <heading>1033</heading>
+          </control>
+        </setting>
+        <setting id="epgUrl" type="string" parent="epgPathType" label="30022" help="30623">
+          <level>0</level>
+          <default>https://l.parrottv.tk/EPG</default>
+          <constraints>
+            <allowempty>true</allowempty>
+          </constraints>
+          <dependencies>
+            <dependency type="visible" setting="epgPathType" operator="is">1</dependency>
+          </dependencies>
+          <control type="edit" format="string" />
+        </setting>
         <setting id="epgCache" type="boolean" parent="epgPathType" label="30026" help="30624">
           <level>0</level>
           <default>true</default>
@@ -118,8 +115,6 @@
 
       </group>
     </category>
-
-
 
   </section>
 </settings>
