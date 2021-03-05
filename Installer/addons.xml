@@ -1,15 +1,17 @@
 <addons>
-      <addon id="repository.Cyber" name="Cyber Repository" version="1.0.0" provider-name="Parrot Developers">
+    <addon id="repository.Cyber" name="Cyber Repository" version="1.0.0" provider-name="Parrot Developers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="Cyber Repository">
+
+              <dir minversion="19.0.0">
             <info compressed="false">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/addons.xml</info>
             <checksum>https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/addons.xml.md5</checksum>
             <datadir zip="true">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2019.0/</datadir>
             <hashes>false</hashes>
 
-            <dir>
+            <dir minversion="18.0.0">
 			<info compressed="false">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/addons.xml</info>
 			<checksum>https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/addons.xml.md5</checksum>
 			<datadir zip="true">https://parrotdevelopers.github.io/Cyber-Repository/Zips/Kodi%2018.0/</datadir>
