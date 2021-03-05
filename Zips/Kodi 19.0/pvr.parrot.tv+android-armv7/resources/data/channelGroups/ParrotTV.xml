@@ -1,0 +1,18 @@
+<!-- Parrot TV-->
+
+<customChannelGroups>
+  <channelGroupName>SK Channels</channelGroupName>
+  <channelGroupName>CZ Channels</channelGroupName>
+  <channelGroupName>DE Channels</channelGroupName>
+  <channelGroupName>CA Channels</channelGroupName>
+  <channelGroupName>US Channels</channelGroupName>
+  <channelGroupName>UK Channels</channelGroupName>
+  <channelGroupName> Futurama - Season 1</channelGroupName>
+  <channelGroupName> Futurama - Season 2</channelGroupName>
+  <channelGroupName> Futurama - Season 3</channelGroupName>
+  <channelGroupName> Futurama - Season 4</channelGroupName>
+  <channelGroupName> Futurama - Season 5</channelGroupName>
+  <channelGroupName> Futurama - Season 6</channelGroupName>
+  <channelGroupName> Futurama - Season 7</channelGroupName>
+  <channelGroupName>Movies</channelGroupName>
+</customChannelGroups>

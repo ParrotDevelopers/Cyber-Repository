@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="pvr.parrot.tv"
+  version="3.0.0"
+  name="Parrot TV PVR"
+  provider-name="Parrot Developers + HereIronman7746">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.pvr" minversion="7.1.0" version="7.1.0"/>
+    <import addon="inputstream.ffmpegdirect" minversion="1.19.0"/>
+    <import addon="inputstream.adaptive" minversion="2.6.6"/>
+    <import addon="inputstream.rtmp" minversion="3.4.0"/>
+  </requires>
+  <extension
+    point="kodi.pvrclient"
+    library_android="libpvr.parrot.tv.so"/>
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en_US">Parrot TV PVR For Matrix</summary>
+
+
+    <description lang="en_US">Parrot TV PVR For Matrix</description>
+
+
+    <disclaimer lang="en_US">Orignally IPTV Simple</disclaimer>
+    <platform>android-armv7</platform>
+
+    <assets>
+              <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
+       <news>
+Originally IPTV Simple.
+    </news>
+  </extension>
+</addon>
