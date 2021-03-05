@@ -16,7 +16,7 @@
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_windows="pvr.parrot.tv.dll"/>
+    library="pvr.parrot.tv.dll"/>
   <extension point="xbmc.addon.metadata">
 
     <summary lang="en_US">Parrot TV PVR For Matrix</summary>
