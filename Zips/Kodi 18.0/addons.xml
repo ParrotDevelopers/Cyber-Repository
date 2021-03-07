@@ -1,7 +1,7 @@
 <addons>
-  <addon id="plugin.parrot.tv"
+<addon id="plugin.parrot.tv"
        name="Parrot TV"
-       version="6.0.0"
+       version="8.0.0"
        provider-name="Parrot Developers">
   <requires>
     <import addon="xbmc.python" version="2.2.0"/>
